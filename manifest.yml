@@ -1,5 +1,8 @@
-version: '1.0'
+version: '1.1'
 history:
+  '1.1':
+    date: '2019-02-26'
+    description: 'Add method calcAll.'
   '1.0':
     date: '2019-01-09'
     description: 'First version.'
@@ -11,7 +14,5 @@ sys:
       - '1.0'
 php:
   - '7.2'
-author: null
-links:
-  Github: 'https://github.com'
+author: Claes Östlund
 description: ''
