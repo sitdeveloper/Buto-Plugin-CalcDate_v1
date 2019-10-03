@@ -1,5 +1,8 @@
-version: '1.1'
+version: '1.2'
 history:
+  '1.2':
+    date: '2019-10-03'
+    description: 'Add param months_total in method calcAll.'
   '1.1':
     date: '2019-02-26'
     description: 'Add method calcAll.'

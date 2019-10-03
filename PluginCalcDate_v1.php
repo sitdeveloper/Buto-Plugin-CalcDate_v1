@@ -92,9 +92,10 @@ class PluginCalcDate_v1{
         'days' => $date_diff->format("%d"), 
         'hours' => $date_diff->format("%h"), 
         'minutes' => $date_diff->format("%i"), 
-        'secounds' => $date_diff->format("%s"),
+        'seconds' => $date_diff->format("%s"),
         'weeks' => floor((strtotime($end_date) - strtotime($start_date)) / 86400 / 7)
             ));
+    $result->set('months_total', ($result->get('years')*12)+$result->get('months'));
     return $result->get();
   }
 }

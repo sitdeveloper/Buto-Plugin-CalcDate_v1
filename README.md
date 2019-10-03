@@ -20,6 +20,7 @@ months: '10'
 days: '9'
 hours: '0'
 minutes: '0'
-secounds: '0'
+seconds: '0'
 weeks: 514
+months_total: 118
 ```
