@@ -95,7 +95,21 @@ class PluginCalcDate_v1{
         'seconds' => $date_diff->format("%s"),
         'weeks' => floor((strtotime($end_date) - strtotime($start_date)) / 86400 / 7)
             ));
+    /**
+     * 
+     */
     $result->set('months_total', ($result->get('years')*12)+$result->get('months'));
+    /**
+     * 
+     */
+    $days = $result->get('days');
+    if(strlen($days)==1){
+      $days = '0'.$days;
+    }
+    $result->set('months_and_days', $result->get('months_total').','.$days);
+    /**
+     * 
+     */
     return $result->get();
   }
 }
