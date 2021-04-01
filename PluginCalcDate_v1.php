@@ -1,9 +1,4 @@
 <?php
-/**
-<p>
- Date calculator.
-</p>
- */
 class PluginCalcDate_v1{
   /**
    * Calculate years.<br>
@@ -93,7 +88,8 @@ class PluginCalcDate_v1{
         'hours' => $date_diff->format("%h"), 
         'minutes' => $date_diff->format("%i"), 
         'seconds' => $date_diff->format("%s"),
-        'weeks' => floor((strtotime($end_date) - strtotime($start_date)) / 86400 / 7)
+        'weeks' => floor((strtotime($end_date) - strtotime($start_date)) / 86400 / 7),
+        'days_total' => floor((strtotime($end_date) - strtotime($start_date)) / 86400)
             ));
     /**
      * 

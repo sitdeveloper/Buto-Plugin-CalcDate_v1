@@ -1,18 +1,29 @@
-version: '1.3'
+version: 1.4.0
 history:
-  '1.3':
+  1.4.0:
+    date: '2021-04-01'
+    title: 'Method param'
+    description: 'Add param days_total in method calcAll.'
+  1.3.0:
     date: '2019-10-08'
+    title: 'Method param'
     description: 'Add param months_and_days in method calcAll.'
-  '1.2':
+  1.2.0:
     date: '2019-10-03'
+    title: 'Method param'
     description: 'Add param months_total in method calcAll.'
-  '1.1':
+  1.1.0:
     date: '2019-02-26'
+    title: 'Method'
     description: 'Add method calcAll.'
-  '1.0':
+  1.0.0:
     date: '2019-01-09'
+    title: 'First version'
     description: 'First version.'
-plugin: {  }
+plugin:
+  -
+    name: wf/array
+    version: 1.2.0
 sys:
   -
     name: mercury
