@@ -21,7 +21,7 @@ Return object of PluginWfArray.
 ```
 start_date: '2019-02-27'
 end_date: '2029-01-05'
-now_date: '2019-02-26'
+now_date: '2022-09-15'
 negative: false
 years: '9'
 months: '10'
@@ -30,7 +30,12 @@ hours: '0'
 minutes: '0'
 seconds: '0'
 weeks: 514
-days_total: 1234
+days_total: 3600
 months_total: 118
+calendar_months:
+  years: 10
+  from: 2
+  to: 1
+  diff: 119
 months_and_days: '118,09'
 ```

@@ -24,9 +24,9 @@ class PluginCalcDate_v1{
   }
   /**
    * 
-   * @param type $date_from
-   * @param type $date_to
-   * @param type $round
+   * @param string $date_from
+   * @param string $date_to
+   * @param int $round
    */
   public static function calcMonths($date_from, $date_to = null, $round = null){
     if(!$date_from){
@@ -95,6 +95,14 @@ class PluginCalcDate_v1{
      * 
      */
     $result->set('months_total', ($result->get('years')*12)+$result->get('months'));
+    /**
+     * calendar months
+     */
+    $result->set('calendar_months/years', (int) date_create($end_date)->format("y") - (int) date_create($start_date)->format("y"));
+    $result->set('calendar_months/from', (int) date_create($start_date)->format("m"));
+    $result->set('calendar_months/to', (int) date_create($end_date)->format("m"));
+    $diff = $result->get('calendar_months/to') - $result->get('calendar_months/from');
+    $result->set('calendar_months/diff', ($result->get('calendar_months/years')*12) + $diff);
     /**
      * 
      */

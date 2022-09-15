@@ -1,5 +1,9 @@
-version: 1.4.0
+version: 1.5.0
 history:
+  1.5.0:
+    date: '2022-09-15'
+    title: 'Method calcAll'
+    description: 'Add data calendar_months in method calcAll.'
   1.4.0:
     date: '2021-04-01'
     title: 'Method param'
