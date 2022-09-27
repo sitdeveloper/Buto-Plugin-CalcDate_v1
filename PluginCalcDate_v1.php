@@ -82,12 +82,12 @@ class PluginCalcDate_v1{
         'end_date' => $end_date,
         'now_date' => date('Y-m-d'),
         'negative' => $negative,
-        'years' => $date_diff->format("%y"), 
-        'months' => $date_diff->format("%m"), 
-        'days' => $date_diff->format("%d"), 
-        'hours' => $date_diff->format("%h"), 
-        'minutes' => $date_diff->format("%i"), 
-        'seconds' => $date_diff->format("%s"),
+        'years' => (int) $date_diff->format("%y"), 
+        'months' => (int) $date_diff->format("%m"), 
+        'days' => (int) $date_diff->format("%d"), 
+        'hours' => (int) $date_diff->format("%h"), 
+        'minutes' => (int) $date_diff->format("%i"), 
+        'seconds' => (int) $date_diff->format("%s"),
         'weeks' => floor((strtotime($end_date) - strtotime($start_date)) / 86400 / 7),
         'days_total' => floor((strtotime($end_date) - strtotime($start_date)) / 86400)
             ));
