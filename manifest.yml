@@ -1,5 +1,9 @@
-version: 1.5.1
+version: 1.6.0
 history:
+  1.6.0:
+    date: '2023-08-11'
+    title: 'New params'
+    description: 'New params months30, months30_and_days.'
   1.5.1:
     date: '2022-09-27'
     title: 'String to Int'

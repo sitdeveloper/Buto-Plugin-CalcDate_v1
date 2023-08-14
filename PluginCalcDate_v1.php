@@ -112,6 +112,19 @@ class PluginCalcDate_v1{
     }
     $result->set('months_and_days', $result->get('months_total').','.$days);
     /**
+     * months30_and_days
+     */
+    $temp_months = 0;
+    for($i=30; $i<=$result->get('days_total'); $i=$i+30){
+      $temp_months++;
+    }
+    $temp_days = $result->get('days_total') - ($temp_months*30);
+    if(strlen($temp_days.'')==1){
+      $temp_days = '0'.$temp_days;
+    }
+    $result->set('months30', $temp_months);
+    $result->set('months30_and_days', "$temp_months,$temp_days");
+    /**
      * 
      */
     return $result->get();

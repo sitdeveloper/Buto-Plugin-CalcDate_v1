@@ -17,25 +17,33 @@ calcAll();
 ```
 
 ## Method calcAll
-Return object of PluginWfArray.
+Return array.
 ```
-start_date: '2019-02-27'
-end_date: '2029-01-05'
-now_date: '2022-09-15'
+start_date: '2023-04-06'
+end_date: '2023-08-11'
+now_date: '2023-08-11'
 negative: false
-years: '9'
-months: '10'
-days: '9'
-hours: '0'
-minutes: '0'
-seconds: '0'
-weeks: 514
-days_total: 3600
-months_total: 118
+years: 0
+months: 4
+days: 5
+hours: 0
+minutes: 0
+seconds: 0
+weeks: 18
+days_total: 127
+months_total: 4
 calendar_months:
-  years: 10
-  from: 2
-  to: 1
-  diff: 119
-months_and_days: '118,09'
+  years: 0
+  from: 4
+  to: 8
+  diff: 4
+months_and_days: '4,05'
+months30: 4
+months30_and_days: '4,07'
 ```
+
+### months30
+One month counts as 30 days.
+
+### months30_and_days
+One month counts as 30 days.
