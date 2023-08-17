@@ -1,5 +1,9 @@
-version: 1.6.0
+version: 1.7.0
 history:
+  1.7.0:
+    date: '2023-08-17'
+    title: 'PHP 8.2'
+    description: 'Changes according to PHP version 8.2.'
   1.6.0:
     date: '2023-08-11'
     title: 'New params'
@@ -26,7 +30,7 @@ history:
     description: 'Add param months_total in method calcAll.'
   1.1.0:
     date: '2019-02-26'
-    title: 'Method'
+    title: Method
     description: 'Add method calcAll.'
   1.0.0:
     date: '2019-01-09'
@@ -43,5 +47,5 @@ sys:
       - '1.0'
 php:
   - '7.2'
-author: Claes Östlund
+author: 'Claes Östlund'
 description: ''

@@ -107,7 +107,7 @@ class PluginCalcDate_v1{
      * 
      */
     $days = $result->get('days');
-    if(strlen($days)==1){
+    if(wfPhpfunc::strlen($days)==1){
       $days = '0'.$days;
     }
     $result->set('months_and_days', $result->get('months_total').','.$days);
@@ -119,7 +119,7 @@ class PluginCalcDate_v1{
       $temp_months++;
     }
     $temp_days = $result->get('days_total') - ($temp_months*30);
-    if(strlen($temp_days.'')==1){
+    if(wfPhpfunc::strlen($temp_days.'')==1){
       $temp_days = '0'.$temp_days;
     }
     $result->set('months30', $temp_months);
